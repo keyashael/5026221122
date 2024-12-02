@@ -1,6 +1,6 @@
 @extends('template')
 
-@section('tulisan1', 'Database sepatu')
+@section('tulisan1', 'Database Sepatu')
 
 @section('link1')
     <a href="/sepatu/tambahSepatu" class="btn btn-primary"> + Tambah Sepatu Baru</a>
@@ -35,7 +35,7 @@
                 <td>{{ $s->merksepatu }}</td>
                 <td>{{ $s->stocksepatu }}</td>
                 <td class="align-middle">
-                    <input type="checkbox" disabled {{ $s->tersedia == 'Y' ? 'checked' : '' }}>
+                    {{ $s->tersedia == 'Y' ? 'Tersedia' : 'Tidak Tersedia' }}
                 </td>
 
                 <td>

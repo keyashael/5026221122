@@ -12,6 +12,12 @@
 <body>
 
 <div class="container">
+    <div class="mb-4 text-center">
+        <a href="/pegawai" class="pegawai-link">Pegawai</a>
+        <a href="/sepatu" class="sepatu-link">Sepatu</a>
+        <a href="/keranjangbelanja" class="keranjangbelanja-link">Keranjang Belanja</a>
+    </div>
+
     <h2>Key - 5026221122</h2>
     <h3>@yield('tulisan1')</h3>
 

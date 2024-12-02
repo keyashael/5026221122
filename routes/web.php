@@ -57,3 +57,8 @@ Route::get('/sepatu/edit/{kodesepatu}','App\Http\Controllers\SepatuController@ed
 Route::post('/sepatu/update','App\Http\Controllers\SepatuController@update');
 Route::get('/sepatu/hapus/{kodesepatu}','App\Http\Controllers\SepatuController@hapus');
 Route::get('/sepatu/cari','App\Http\Controllers\SepatuController@cari');
+
+Route::get('/keranjangbelanja', 'App\Http\Controllers\KeranjangBelanjaController@index');
+Route::get('/keranjangbelanja/create', 'App\Http\Controllers\KeranjangBelanjaController@create');
+Route::post('/keranjangbelanja/store', 'App\Http\Controllers\KeranjangBelanjaController@store');
+Route::delete('keranjangbelanja/destroy/{ID}', 'App\Http\Controllers\KeranjangBelanjaController@destroy');
