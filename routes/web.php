@@ -62,3 +62,9 @@ Route::get('/keranjangbelanja', 'App\Http\Controllers\KeranjangBelanjaController
 Route::get('/keranjangbelanja/create', 'App\Http\Controllers\KeranjangBelanjaController@create');
 Route::post('/keranjangbelanja/store', 'App\Http\Controllers\KeranjangBelanjaController@store');
 Route::delete('keranjangbelanja/destroy/{ID}', 'App\Http\Controllers\KeranjangBelanjaController@destroy');
+
+Route::get('/karyawan','App\Http\Controllers\KaryawanController@index');
+Route::get('/karyawan/tambahKaryawan','App\Http\Controllers\KaryawanController@tambah');
+Route::post('/karyawan/store','App\Http\Controllers\KaryawanController@store');
+Route::get('/karyawan/hapus/{NIP}','App\Http\Controllers\KaryawanController@hapus');
+Route::get('/karyawan/cari','App\Http\Controllers\KaryawanController@cari');
